@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding-top:2em;
+  background: #87b5b5;
+}
+
+.App {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width:100%;
+  max-width:700px;
+  margin:0 auto;
+}
+
+#editor {
+  width:100%;
+  min-height:30vh;
+}
+
+.App.solo #editor {
+  min-height:90vh;
+}
+
+button {
+  margin-left:auto;
+  appearance: none;
+  background-color: transparent;
+  border:transparent;
+  font-size:1.15rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-arrows-alt:hover,
+.fa-arrows-alt:focus,
+.fa-compress:hover,
+.fa-compress:focus
+ {
+  color: rgb(0, 255, 157);
+}
+
+.fa-free-code-camp {
+  margin-right:0.5em;
+  font-size: 1.15rem;
+}
+
+.editorWrap {
+  max-width:550px;
+  width:100%;
+}
+
+.editorWrap textarea, #preview {
+  background-color: #c0d8d8;
+  border-top: none;
+}
+
+.editorWrap textarea, .toolbar, #preview {
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+.App.solo .previewWrap {
+  margin-top:0;
+  margin-bottom:2em;
+  min-height:90vh;
+}
+
+.previewWrap {
+  margin-top:2em;
+  max-width:700px;
+  width:100%;
+}
+
+.toolbar {
+  background-color: #4aa3a3;
+  font-family: Russo One,sans-serif;
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  width:100%;
+  padding:0.5em 1em;
+  border-bottom: none;
+}
+
+#preview {
+  padding:1em;
+}
+
+#preview img {
+  max-width:100%;
+}
+
+#preview pre {
+  background-color:white;
+  padding:0 1em;
+}
